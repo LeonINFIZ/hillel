@@ -1,7 +1,4 @@
-import math
+my_text = input("Enter your text: ")
 
-r = int(input("Radius = "))
-
-result = math.pi * r ** 2
-
-print(f'{round(result, 2)} - cm')
+print(my_text[2:7])
+print(my_text[-4:4:-1])
