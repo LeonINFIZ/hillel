@@ -1,5 +1,7 @@
-num1 = int(input("Довжина = "))
-num2 = int(input("Висота = "))
-num3 = int(input("Ширина = "))
+import math
 
-print("\nОб'єм паралелепіпеда = ", num1 * num2 * num3)
+r = int(input("Radius = "))
+
+result = math.pi * r ** 2
+
+print(f'{round(result, 2)} - cm')
