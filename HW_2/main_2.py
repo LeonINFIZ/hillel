@@ -35,7 +35,7 @@ print()
 
 print("Варіант 3:")
 
-result = int(str(int(num % 10)) + str(int(num % 10 ** 2 // 10)) + str(int(num % 10 ** 3 // 10 ** 2)) + str(int(num % 10 ** 4 // 10 ** 3)) + str(int(num // 10000)))
+result = int(str(num % 10) + str(num % 10 ** 2 // 10) + str(num % 10 ** 3 // 10 ** 2) + str(num % 10 ** 4 // 10 ** 3) + str(num // 10000))
 print(result, type(result))
 
 print()
