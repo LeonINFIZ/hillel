@@ -19,7 +19,7 @@ def text_to_hashtag(text):
     # Замінюємо першу букву в на велику та дописуємо решту символів об'єкту з вже заданим хештегом
     hashtag = "#"
     for word in split_text:
-        hashtag += word[0].upper() + word[1:]
+        hashtag += word.title()
 
     # Обрізаємо зайву частину тексту, не більше 140 символів
     if len(hashtag) > 140:
