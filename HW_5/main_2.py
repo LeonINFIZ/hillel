@@ -1,6 +1,6 @@
 go_next = "y"
 
-while go_next == "y" or go_next == "Y" or go_next == "Yes" or go_next == "yes":
+while go_next == "y":
     while True:
         try:
             num1 = int(input("Перше число = "))
@@ -39,8 +39,13 @@ while go_next == "y" or go_next == "Y" or go_next == "Yes" or go_next == "yes":
 
     elif answer == 4:
         result = num1 / num2
-        print(f"{num1} / {num2} =", result)
+        print(f"{num1} / {num2} =", round(result, 5))
 
-
-    go_next = input("\nСпробувати ще раз? (Y, y, Yes, yes) / Інший текст - щоб завершити роботу: ")
+    go_next = input("\nСпробувати ще раз? (y) / Інший текст - щоб завершити роботу: ")
     print()
+
+else:
+    print("Допобачення!")
+
+
+
