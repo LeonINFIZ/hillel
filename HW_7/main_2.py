@@ -2,6 +2,15 @@ import string
 
 
 def correct_sentence(text):
+    """
+    Коригує рядок, щоб він починався з великої літери та закінчувався крапкою.
+
+    Параметри:
+    text (str): Початковий рядок.
+
+    Повертає:
+    str: Рядок з великої літери, що закінчується крапкою.
+    """
     text = text[0].upper() + text[1:]
 
     if text[-1] not in string.ascii_letters:
