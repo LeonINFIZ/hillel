@@ -21,4 +21,3 @@ my_func([1, 2, 3])
 my_func([1, 2, 3, 4, 5])
 my_func([1])
 my_func([])
-

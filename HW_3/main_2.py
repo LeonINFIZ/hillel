@@ -46,3 +46,13 @@ my_list.insert(0, pop_num)
 print(" =>", my_list)
 
 #########################
+
+my_list = [12, 3, 4, 10, 8]
+
+new_list = [my_list[-1]]
+
+del my_list[-1]
+
+new_list.extend(my_list)
+
+print(new_list)
