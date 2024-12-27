@@ -1,6 +1,6 @@
 **Домашня робота ст. Топалова Артема**
 
 >[!NOTE]
->![Telegram](https://i.imgur.com/DbkrFfI.png) @leon_infiz
+>[Telegram @leon_infiz](https://t.me/leon_infiz)
 
 ![Фото](https://i.imgur.com/L6aixtk.png)
