@@ -3,4 +3,4 @@
 > [!NOTE]
 > Telegram: @leon_infiz
 
-![Фото](https://i.imgur.com/ZFU7TgP.png)
+![Фото](blob:https://imgur.com/c736e7c7-9436-483f-b270-d14c3d6a8d15)
