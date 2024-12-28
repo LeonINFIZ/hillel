@@ -1,4 +1,15 @@
 def difference(*args):
+    """
+    Calculates the difference between the largest and smallest values in the given argument list.
+    Supports integer and float types and returns the result rounded to two decimal places
+    for float values.
+
+    :param args: Variable length argument list of numbers to calculate the difference between.
+        Must only contain numeric types (integers or floats).
+    :return: The difference between the largest and smallest numbers in the argument list.
+        If the list is empty, returns 0. If the largest and smallest values are floats,
+        the result will be rounded to 2 decimal places.
+    """
     args = list(args)
 
     if not args:
