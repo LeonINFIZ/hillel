@@ -1,4 +1,18 @@
+from inspect import isgenerator
+
+
 def pow(x):
+    """
+    Calculate the square of a given number.
+
+    This function computes the square of the input value `x` and returns it.
+    It supports any numeric type, including floating-point and integer values.
+
+    :param x: The number to be squared.
+    :type x: int or float
+    :return: The square of the input number `x`.
+    :rtype: int or float
+    """
     return x ** 2
 
 
@@ -24,8 +38,6 @@ def some_gen(begin, end, func):
         yield begin
         begin = func(begin)
 
-
-from inspect import isgenerator
 
 gen = some_gen(2, 4, pow)
 assert isgenerator(gen) == True, 'Test1'
