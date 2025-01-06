@@ -34,7 +34,7 @@ def some_gen(begin, end, func):
     :rtype: generator
     """
 
-    for i in range(end):
+    for _ in range(end):
         yield begin
         begin = func(begin)
 
