@@ -1,21 +1,21 @@
 from inspect import isgenerator
 
 
-def prime_generator(end):
+def prime_generator(end: int) -> Generator[int, None, None]:
     """
-    Generates prime numbers up to a specified limit.
+    Generates prime numbers up to the specified limit.
 
-    This function is a generator that yields prime numbers from 2 to the given
-    endpoint (inclusive). It evaluates each number in the range using the
-    trial division method, checking if the number is evenly divisible by any
-    of the integers between 2 and the square root of the number (inclusive).
-    If a number is not divisible by any of these, it is classified as prime
-    and yielded as part of the sequence.
+    This function is a generator that yields prime numbers one by one, starting
+    from 2, up to the specified 'end' value. It uses an efficient algorithm
+    to check the primality of a number by iterating only up to the square root
+    of the number. Each number that satisfies the conditions for being a prime
+    is yielded.
 
-    :param end: The upper limit of the range to generate primes (inclusive).
+    :param end: The upper limit up to which prime numbers are generated. The
+        function includes 'end' if it is a prime number.
     :type end: int
-    :return: A generator yielding prime numbers within the specified range.
-    :rtype: Iterator[int]
+    :return: A generator that yields prime numbers up to the specified limit.
+    :rtype: Generator[int, None, None]
     """
 
     for num in range(2, end + 1):

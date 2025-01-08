@@ -1,4 +1,4 @@
-def is_even(number):
+def is_even(number: int) -> bool:
     """
     Determine if a given number is even.
 
@@ -11,7 +11,7 @@ def is_even(number):
     :return: True if the number is even, False otherwise.
     :rtype: bool
     """
-    return True if str(number)[-1] in "02468" else False
+    return str(number)[-1] in "02468"
 
 
 assert is_even(2494563894038 ** 2) == True, 'Test1'

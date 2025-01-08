@@ -1,21 +1,22 @@
+from typing import Generator
 from inspect import isgenerator
 
 
-def generate_cube_numbers(end):
+def generate_cube_numbers(end: int) -> Generator[int, None, None]:
     """
-    Generate cube numbers up to a specific limit.
+    Generates cube numbers starting from the cube of 2 up to a specified limit.
 
-    This function generates the cubes of numbers starting from 2 up to a given limit.
-    Cubes are generated for numbers such that the cube value is less than or equal
-    to the specified limit. The function employs a generator for yielding each cube
-    value instead of returning a precomputed list, thereby optimizing memory usage
-    for large ranges.
+    This generator function computes cube numbers starting at 2**3 (8) and yields
+    cubes iteratively as long as the cube is less than or equal to the specified
+    limit. It stops generating once a cube exceeds the `end` limit.
 
-    :param end: The upper limit (inclusive) up to which cube numbers are generated.
-                Must be an integer.
-    :return: A generator yielding cube numbers that satisfy the specified limit.
+    :param end: Upper limit for generating cube numbers. Cube values generated
+                will be less than or equal to this value.
+    :type end: int
+    :return: A generator of cube numbers from the cube of 2 up to `end`.
+    :rtype: Generator[int, None, None]
     """
-    
+
     for num in range(2, end + 1):
         if num ** 3 > end:
             return
